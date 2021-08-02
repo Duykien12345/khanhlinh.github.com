@@ -1,0 +1,204 @@
+h3{
+    font-size: 25px;
+    color: blue;
+    font-family: Fira Sans;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  li {
+    float: left;
+    font-size: 15px;
+    padding: 16px 8px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+  }
+  li{
+    color: black;
+  }
+  .menu-left, .menu-right{
+    float: left;
+  }
+  .menu-left{
+    margin-left: 30px;
+  }
+  .image img{
+    padding-left: 290px;
+    padding-top: 30px;
+    width: 800px;
+  }
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+    margin: 0px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+    /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  @media only screen and (max-width: 992px) {
+        /* For desktop: */
+        .image img{
+          padding-left: 290px;
+          padding-top: 30px;
+          width: 800px;
+        }
+        .menu-left, .menu-right{
+          float: left;
+        }
+        .menu-left{
+          margin-left: 30px;
+        }
+        .header {
+          display: flex;
+          justify-content: space-between;
+          text-align: center;
+          text-decoration: none;
+          color: black;
+          background-color: white;
+          border: 3px solid black;
+        }
+        ul{
+          list-style-type: none;
+          margin:0px;
+          }
+        li{
+          color: white;
+          }
+    }
+   @media only screen and (max-width: 928px) {
+        /* For tablets: */
+        p{
+          font-family: Open Sans;
+          font-size: 18px;
+        }
+        .image img{
+          padding-left: 200px;
+          padding-top: 30px;
+          width: 750px;
+        }
+        .menu-left, .menu-right{
+          float: left;
+        }
+        .menu-left{
+          margin-left: 25px;
+        }
+        .header{
+          background-color: #34414e;
+          color: white;
+          display: flex;
+          justify-content: space-between;
+        }
+        ul{
+          list-style-type: none;
+          justify-content: space-between;
+          display: flex;
+        }
+        li{
+          list-style-type: none;
+          justify-content: space-between;
+          display: flex;
+          color: white;
+        }
+    }
+  @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        .text-5{
+          font-size: 18px;
+          color: black;
+        }
+        p{
+          font-family: monospace;
+          font-size: 18px;
+        }
+        .header {
+          background-color: #34414e;
+        }
+        ul{
+          list-style-type: none;
+          justify-content: space-between;
+          display: flex;
+        }
+        li{
+          list-style-type: none;
+          justify-content: space-between;
+          display: flex;
+          color: white;
+        }
+        .image img{
+          width: 700px;
+          float: right;
+        }
+    }
+    @media only screen and (min-width: 992px) {
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+      h2{
+        text-align: center;
+        font-family: Merriweather;
+      }
+      .text{
+        font-size: 20px;
+        font-family: Montserrat;
+      }
+      body{
+        background-color: gainsboro;
+      }
+      .text-5{
+        color: black;
+        font-size: 18px;
+      }
+  }
+  @media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .text-5{
+      font-size: 18px;
+      color: black;
+    }
+  }

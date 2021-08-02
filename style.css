@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.header{
+  display: flex;
+  background-color: #34414e;
+  justify-content: space-between;
+  font-size: 20px;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  float: left;
+  font-size: 15px;
+  padding: 16px 8px;
+  color: white;
+}
+.menu-left, .menu-right{
+  float: left;
+}
+.menu-left{
+  margin-left: 30px;
+}
+.line{
+  font-weight: bold;
+  font-size: 20px;
+}
+h1{
+  font-family: Merriweather;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+h2{
+  font-size: 30px;
+  margin-left: 25px;
+}
+img{
+  width: 350px;
+  margin-left: 25px;
+  height: 250px;
+  padding: 20px 0px 0px 0px;
+}
+.footer{
+  float: left;
+  margin-left: 5px;
+}
+h3{
+  font-size: 25px;
+  color: black;
+}
+.text{
+  color: black;
+}
+  /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+.word{
+  transition-duration: 0s;
+}
+.word:hover{
+  color: black;
+  background-color: white;
+}
+@media only screen and (min-width: 992px){
+    /* For desktop: */
+    .word{
+      transition-duration: 0s;
+    }
+    .word:hover {
+      color: white;
+      background-color: green;
+    }
+    .col-1{
+      width: 33%;
+      float: left;
+    }
+    .col-2{
+      width: 33%;
+      float: left;
+    }
+    .col-3{
+      width: 33%;
+      float: left;
+    }
+    .column{
+      height: 500px;
+    }
+    .footer{
+      float: left;
+      margin-left: 15px;
+      background-color: whitesmoke;
+    }
+    h3{
+      float: left;
+      margin-left: 5px;
+    }
+    .text{
+      font-size: 20px;
+      font-family: Montserrat;
+    }
+    .line{
+      margin-left: 0px;
+      font-size: 23px;
+      font-weight: bold;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      background-color: white;
+      border: 3px solid black;
+    }
+    ul{
+      list-style-type: none;
+      margin:0px;
+      }
+    li{
+      color: black;
+      }
+    .background{
+      background-image: url(https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png);
+      width: 100%;
+      height: 450px;
+      background-size: cover;
+      margin: 0px;
+      margin-top: 25px;
+    }
+    h1{
+      color: white;
+      padding-top: 25px;
+    }
+    .text-1{
+      font-size: 20px;
+      font-family: Montserrat;
+      color: white;
+    }
+}
+@media only screen and (min-width: 928px) {
+    /* For tablets: */
+    .header{
+      background-color: #34414e;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+    }
+    ul{
+      list-style-type: none;
+      justify-content: space-between;
+      display: flex;
+    }
+    li{
+      list-style-type: none;
+      justify-content: space-between;
+      display: flex;
+      color: white;
+    }
+    .line{
+      margin-left: 0px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .text{
+      font-size: 20px;
+      font-family: Open Sans;
+    }
+    .text-1{
+      font-size: 20px;
+      font-family: Open Sans;
+    }
+    .word{
+      transition-duration: 0s;
+    }
+    .word:hover{
+      color: black;
+      background-color: white;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* For mobile phones: */
+    .header{
+      background-color: #34414e;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+    }
+    ul{
+      list-style-type: none;
+      justify-content: space-between;
+      display: flex;
+    }
+    li{
+      list-style-type: none;
+      justify-content: space-between;
+      display: flex;
+      color: white;
+    }
+    .line{
+      margin-left: 0px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .text{
+      font-size: 20px;
+      font-family: monospace;
+    }
+    .text-1{
+      font-size: 20px;
+      font-family: monospace;
+    }
+    .word{
+      transition-duration: 0s;
+    }
+    .word:hover{
+      color: black;
+      background-color: white;
+    }
+}
+@media only screen and (min-width: 992px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+  }
+  ul{
+    list-style-type: none;
+    margin:0px;
+  }
+  li{
+    color: black;
+  }
+  body{
+    background-color: gainsboro;
+  }
+  .line{
+    margin-left: 0px;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .text{
+    font-size: 20px;
+    font-family: Montserrat;
+  }
+  .background{
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    margin: 0px;
+    margin-top: 25px;
+  }
+  .text-1{
+    font-size: 20px;
+    font-family: Montserrat;
+    color: white;
+  }
+  .footer{
+    float: left;
+    margin-left: 5px;
+    background-color: whitesmoke;
+  }
+  .column{
+    height: 500px;
+  }
+  .col-1{
+    width: 33%;
+    float: left;
+  }
+  .col-2{
+    width: 33%;
+    float: left;
+  }
+  .col-3{
+    width: 33%;
+    float: left;
+  }
+  .word{
+    transition-duration: 0s;
+  }
+  .word:hover {
+    color: white;
+    background-color: green;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  text{
+    font-family: Open Sans;
+  }
+  .text-1{
+    font-family: Open Sans;
+  }
+}
